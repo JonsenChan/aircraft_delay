@@ -1,13 +1,13 @@
-# 安裝相關跳套件
+# 安裝相關套件
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 from time import sleep
 import csv
 
-# 匯入嘉宏給人家(羞~)準備的機尾資料，在jupyter notebook，用shape確認幾筆資料
+# 匯入準備好的機尾資料，可以在jupyter notebook，用shape確認幾筆資料
 numList=pd.read_csv("C:/Users/User/Desktop/tail_number1.txt",header=None)
-numList.shape[0]
+# numList.shape[0]
 
 # 給網址
 url="https://registry.faa.gov/aircraftinquiry/Search/NNumberResult"
